@@ -48,10 +48,12 @@ function showTopFlavors(jsonObj) {
         let image = document.createElement("img");
         let ul = document.createElement("ul");
         let h3 = document.createElement("h3");
+        let h4 = document.createElement("h4");
 
         // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
         h2.textContent = topFlavors[i]["name"];
         h3.textContent = topFlavors[i]["calories"];
+        h4.textContent = topFlavors[i]["type"];
         image.setAttribute("src", `images/${topFlavors[i]["image"]}`);
         // STEP 10g: Build a loop for the ingredients array in the JSON
         let ingredients = topFlavors[i]["ingredients"];
@@ -66,12 +68,12 @@ function showTopFlavors(jsonObj) {
         article.appendChild(h2);
         article.appendChild(image);
         article.appendChild(ul);
-        
-        
+        article.appendChild(h3);
+        article.appendChild(h4);
 
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
         section.appendChild(article);
-        section.appendChild(h3);
+         
     };
 };
 // STEP 11: The instructor will edit the JSON file - refresh your page to see the updated content
