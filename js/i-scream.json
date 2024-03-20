@@ -25,6 +25,28 @@
         "clover honey"
       ],
       "image" : "peach-mango.svg"
+    },
+    {
+      "name" : "Chewy Wood",
+      "calories" : 800,
+      "type" : "ice cream",
+      "ingredients" : [
+        "Tree",
+        "Leafs",
+        "Maple syrup"
+      ],
+      "image" : "ice-cream-xtra1.svg"
+    },
+    {
+      "name" : "Winter Freeze",
+      "calories" : 6450,
+      "type" : "ice-cream",
+      "ingredients" : [
+        "Hydrochloric acid",
+        "Melted Quarters",
+        "Five alive gum"
+      ],
+      "image" : "ice-cream-xtra2.svg"
     }
   ]
 }
